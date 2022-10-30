@@ -9,15 +9,14 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage>
-    with SingleTickerProviderStateMixin {
+class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin {
   final GlobalKey<AnimatedListState> _key = GlobalKey<AnimatedListState>();
   List<Map<String, dynamic>> nameList = [];
   final _controller = TextEditingController();
   late AnimationController _animationController;
   late Animation<double> _animation;
 
-void _getLocalData() async {
+	void _getLocalData() async {
     final pref = await SharedPreferences.getInstance();
     final String? getData = pref.getString('data');
     if (getData != null) {
@@ -28,9 +27,9 @@ void _getLocalData() async {
         }
       });
     }
-  }	
+  }
 
-void _setLocalData() async {
+	void _setLocalData() async {
     final pref = await SharedPreferences.getInstance();
     String setData = json.encode(nameList);
     pref.setString('data', setData);
@@ -104,7 +103,7 @@ void _setLocalData() async {
               height: MediaQuery.of(context).size.height * 0.4,
               width: MediaQuery.of(context).size.width,
               decoration: const BoxDecoration(
-                  image: DecorationImage(
+                image: DecorationImage(
                 image: AssetImage('assets/bg2.jpg'),
                 fit: BoxFit.cover,
               )),

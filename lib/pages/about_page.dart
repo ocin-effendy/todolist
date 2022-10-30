@@ -7,8 +7,7 @@ class AboutPage extends StatefulWidget {
   State<AboutPage> createState() => _AboutPageState();
 }
 
-class _AboutPageState extends State<AboutPage>
-    with SingleTickerProviderStateMixin {
+class _AboutPageState extends State<AboutPage>with SingleTickerProviderStateMixin {
   late AnimationController _animationController;
   late Animation<double> _animation;
 
