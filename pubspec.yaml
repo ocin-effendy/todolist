@@ -37,6 +37,7 @@ dependencies:
   google_fonts: ^3.0.1
   provider: ^6.0.3
   shared_preferences: ^2.0.15
+  get: ^4.6.5
 
 dev_dependencies:
   flutter_test:
@@ -73,6 +74,7 @@ flutter:
   assets:
     - assets/bg2.jpg
     - assets/bg5.jpg
+    - assets/foto.jpg
     - assets/profile.jpg
     - assets/app.png
 

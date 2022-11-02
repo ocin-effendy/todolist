@@ -26,7 +26,7 @@ class NavigationDrawer extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const CircleAvatar(
-                          backgroundImage: AssetImage("assets/profile.jpg"),
+                          backgroundImage: AssetImage("assets/foto.jpg"),
                           radius: 40,
                         ),
                         const SizedBox(

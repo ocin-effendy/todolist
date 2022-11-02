@@ -23,8 +23,7 @@ class MyTheme {
       scaffoldBackgroundColor: Colors.white,
       colorScheme: const ColorScheme.dark(),
       primaryColor: const Color.fromRGBO(25, 25, 25, 1),
-      iconTheme:
-          const IconThemeData(color: Color.fromRGBO(65, 63, 66, 1), opacity: 1),
+      iconTheme:const IconThemeData(color: Color.fromRGBO(65, 63, 66, 1), opacity: 1),
       secondaryHeaderColor: Colors.white,
       fontFamily: 'Poppins'
 		);
@@ -33,8 +32,7 @@ class MyTheme {
       scaffoldBackgroundColor: Colors.white,
       colorScheme: const ColorScheme.light(),
       primaryColor: Colors.white,
-      iconTheme: const IconThemeData(
-          color: Color.fromRGBO(212, 144, 112, 1), opacity: 1),
+      iconTheme: const IconThemeData(color: Color.fromRGBO(212, 144, 112, 1), opacity: 1),
       secondaryHeaderColor: Colors.grey[700],
       fontFamily: 'Poppins'
 		);
